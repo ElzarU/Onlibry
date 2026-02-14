@@ -357,3 +357,74 @@ body {
 .empty-state b {
   color: #e5e7eb;
 }
+
+@media (max-width: 1024px) {
+  .app-shell {
+    flex-direction: column;
+    height: auto;
+    min-height: 100vh;
+    overflow: visible;
+  }
+
+  .sidebar {
+    width: 100%;
+    box-sizing: border-box;
+    height: auto;
+    max-height: none;
+    position: static;
+    border-right: none;
+    border-bottom: 1px solid #1f2937;
+    gap: 16px;
+    padding: 14px;
+  }
+
+  .sidebar-nav {
+    flex-direction: row;
+    overflow-x: auto;
+    padding-bottom: 2px;
+  }
+
+  .sidebar-nav button {
+    flex-shrink: 0;
+  }
+
+  .main {
+    height: auto;
+    overflow: visible;
+    padding: 18px;
+  }
+}
+
+@media (max-width: 700px) {
+  .topbar,
+  .section-header,
+  .topbar-user,
+  .book-details-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .book-details-actions {
+    width: 100%;
+  }
+
+  .topbar-user {
+    gap: 8px;
+  }
+
+  .badge-pill {
+    width: fit-content;
+  }
+
+  .section-title h1 {
+    font-size: 20px;
+  }
+
+  .book-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .book-cover {
+    height: 260px;
+  }
+}
