@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'api/',
+  baseURL: '/api',
 });
 api.get("/books")
 api.interceptors.request.use((config) => {
