@@ -910,8 +910,7 @@ function App() {
             </div>
           ) : loading ? (
             <div className="empty-state">
-              <b>Fetching catalog…</b> Make sure Django backend is running at
-              <span> http://127.0.0.1:8000/api/books/</span>
+              <b>Fetching catalog…</b>
             </div>
           ) : visibleBooks.length === 0 ? (
             <div className="empty-state">
